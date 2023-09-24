@@ -1,6 +1,6 @@
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #1e2a38;
     color: #fff;
     padding: 15px 0;
     display: flex;
@@ -10,7 +10,7 @@ header {
 
 .logo {
     margin-left: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 24px;
     text-decoration: none;
     color: #fff;
@@ -28,36 +28,43 @@ header {
 
 .nav a {
     text-decoration: none;
-    color: #b9b9b9;
+    color: #b0b0b0;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .nav a:hover {
-    color: #000;
+    color: #fff;
 }
 
 /* Body styles */
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
     margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
 }
 
 .jumbotron {
-    background-color: #eee;
+    background-color: #fff;
     padding: 30px;
     border-radius: 6px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron h2 {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 /* Content styles */
@@ -71,17 +78,21 @@ body {
 .column {
     flex: 1;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1e2a38;
+    color: #b0b0b0;
     text-align: center;
     padding: 15px 0;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.4;
+    border-top: 1px solid #333;
 }
 
 /* Dropdown styles */
@@ -95,7 +106,7 @@ footer {
 .dropdown-button {
     padding: 10px;
     cursor: pointer;
-    background-color: #333;
+    background-color: #1e2a38;
     color: #fff;
     border: none;
 }
@@ -121,5 +132,5 @@ footer {
 }
 
 .dropdown-content a:hover {
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
 }
