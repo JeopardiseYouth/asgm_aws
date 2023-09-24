@@ -646,7 +646,6 @@ def student_home():
         start_date = datetime.date.fromisoformat(start_date_str)
         end_date = datetime.date.fromisoformat(end_date_str)
 
-        #######################################################################
         # Retrieve supervisor details
         supervisor_query = "SELECT l.name, l.email FROM lecturer l, student s WHERE s.supervisor = l.lectId AND studentId = %s"
         cursor = db_conn.cursor()
@@ -660,7 +659,6 @@ def student_home():
         cursor.execute(company_query, (student[0]))
         companyDetails = cursor.fetchone()
         cursor.close()
-        #######################################################################
 
         # Create a list to store all the retrieved data
         user_data = {
@@ -1531,7 +1529,6 @@ def verifyLogin():
             start_date = datetime.date.fromisoformat(start_date_str)
             end_date = datetime.date.fromisoformat(end_date_str)
 
-            #######################################################################
             # Retrieve supervisor details
             supervisor_query = "SELECT l.name, l.email FROM lecturer l, student s WHERE s.supervisor = l.lectId AND studentId = %s"
             cursor = db_conn.cursor()
@@ -1577,7 +1574,7 @@ def verifyLogin():
             # User not found, login failed
             return render_template('LoginStudent.html', msg="Access Denied: Invalid Email or Ic Number")
 
-# GWEE YONG SEAN
+
 # Function to create a database connection context
 
 
@@ -1973,7 +1970,7 @@ def download_StudF04():
     # Redirect the user to the URL of the PDF file
     return redirect(response)
 
-# DOWNLOAD FOCS_StudF05.docx
+
 
 
 @app.route('/downloadStudF05', methods=['GET'])
@@ -2004,7 +2001,7 @@ def download_StudF05():
     # Redirect the user to the URL of the PDF file
     return redirect(response)
 
-# DOWNLOAD FOCS_StudF06.pdf (Student Support Letter)
+
 
 
 @app.route('/downloadStudF06', methods=['GET'])
@@ -2304,7 +2301,7 @@ def LecUpdateReportStatus():
 
     return render_template('LecturerLogin.html')
 
-# Download resume from S3 (based on Student Id)
+
 
 
 @app.route('/lecViewDoc', methods=['GET', 'POST'])
@@ -2835,7 +2832,7 @@ def FilterPickedStudent():
         cursor.close()
 
 
-####################### ADMIN #########################
+
 @app.route('/login_admin')
 def login_admin():
     return render_template('LoginAdmin.html')
