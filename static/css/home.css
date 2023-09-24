@@ -18,14 +18,14 @@ nav {
 nav a {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-decoration: none;
-    color: #b9b9b9;
+    color: #ffffff;
     font-size: 16px;
     margin-left: 20px; /* Add margin to space out the links */
     transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 nav a:hover {
-    color: #ffffff; /* Change the color on hover */
+    color: #000000; /* Change the color on hover */
 }
 
 body{
